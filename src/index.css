@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+
+  /* ---- SOPConnect design tokens ----
+     Stored as "R G B" channel triplets (no commas) so Tailwind's
+     rgb(var(--x) / <alpha-value>) pattern can apply opacity modifiers
+     (bg-paper/95, text-paper/90, etc.) — a plain var(--x) hex value
+     can't be given an alpha channel by Tailwind at all. */
+
+  /* Brand palette, matched to the SOPConnect logo mark:
+     navy wordmark, gold ribbon, green ribbon, blue ribbon. */
+
+  /* Primary: logo navy — professional, educational, trustworthy */
+  --color-primary: 26 32 64;
+  --color-primary-light: 60 65 93;
+  --color-primary-dark: 17 21 42;
+
+  /* Secondary: logo gold — achievement, growth, CTAs */
+  --color-secondary: 214 142 20;
+  --color-secondary-light: 224 170 79;
+  --color-secondary-dark: 150 99 14;
+
+  /* Accent: logo blue — informational highlights, tech/trust moments.
+     accent-dark is for text/small elements on light backgrounds, where
+     the vivid accent alone doesn't clear contrast requirements. */
+  --color-accent: 4 155 253;
+  --color-accent-dark: 3 100 163;
+
+  /* Leaf: logo green — success states, cultural/creative moments.
+     leaf-dark is for text/small elements on light backgrounds. */
+  --color-leaf: 50 182 58;
+  --color-leaf-dark: 33 118 38;
+
+  --color-paper: 250 248 244;
+  /* Warm sand — alternate section background, so bands don't all read as
+     the same flat white next to the paper background. */
+  --color-surface: 243 235 220;
+  --color-ink: 24 27 34;
+  --color-ink-soft: 74 79 92;
+  --color-line: 223 218 207;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--color-paper));
+  color: rgb(var(--color-ink));
+  font-family: "Libre Franklin", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", serif;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgb(var(--color-secondary));
+  color: rgb(var(--color-primary-dark));
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-secondary));
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
