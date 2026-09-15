@@ -94,7 +94,9 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-paper/70">
               <li className="flex items-start gap-2.5">
                 <Mail size={16} className="mt-0.5 shrink-0 text-secondary" />
-                <span>info@sopconnect.co.uk</span>
+                <a href="mailto:info@sopconnectconsultltd.com" className="transition-colors hover:text-secondary">
+                  info@sopconnectconsultltd.com
+                </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone size={16} className="mt-0.5 shrink-0 text-secondary" />

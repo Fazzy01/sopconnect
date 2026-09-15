@@ -7,7 +7,7 @@ import DisclaimerBanner from "../components/DisclaimerBanner";
 import { fullDisclaimer } from "../data/content";
 
 const details = [
-  { icon: Mail, label: "Email", value: "info@sopconnect.co.uk", href: "mailto:info@sopconnect.co.uk" },
+  { icon: Mail, label: "Email", value: "info@sopconnectconsultltd.com", href: "mailto:info@sopconnectconsultltd.com" },
   { icon: Phone, label: "Phone", value: "+44 7469 927395", href: "tel:+447469927395" },
   { icon: MapPin, label: "Address", value: "M56 Hub, 64 Chorley Road, Swinton, Manchester, M27 5AD" },
   { icon: Clock, label: "Hours", value: "Monday–Friday, 9:00–17:00" },

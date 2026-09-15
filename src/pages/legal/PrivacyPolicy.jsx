@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
         {
           heading: "Contact",
           body: [
-            "Questions about this policy can be sent to info@sopconnect.co.uk.",
+            "Questions about this policy can be sent to info@sopconnectconsultltd.com.",
           ],
         },
       ]}

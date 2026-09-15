@@ -9,7 +9,7 @@ export default function Complaints() {
         {
           heading: "How to raise a complaint",
           body: [
-            "If you're unhappy with any SOPConnect service, please contact us with details of your concern using the general enquiry form and select 'General Enquiry' as the category, or email info@sopconnect.co.uk.",
+            "If you're unhappy with any SOPConnect service, please contact us with details of your concern using the general enquiry form and select 'General Enquiry' as the category, or email info@sopconnectconsultltd.com.",
           ],
         },
         {
