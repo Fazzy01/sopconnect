@@ -3,7 +3,7 @@ import {
   GraduationCap,
   ClipboardList,
   Users,
-  Palette,
+  Clapperboard,
 } from "lucide-react";
 
 export const nav = [
@@ -87,7 +87,7 @@ export const services = [
     letter: "D",
     id: "conferences-events",
     icon: Users,
-    title: "Conferences, Workshops & Business Events",
+    title: "Conferences & Events",
     strap: "Professional and community events, planned and delivered end to end.",
     description:
       "We design and run conferences, seminars, panels and networking programmes that bring professionals and organisations together around career development, leadership and industry practice.",
@@ -106,25 +106,38 @@ export const services = [
   },
   {
     letter: "E",
-    id: "culture-creative",
-    icon: Palette,
-    title: "Cultural & Creative Programmes",
-    strap: "Community-facing experiences built around creativity and culture.",
+    id: "sopentertainment",
+    icon: Clapperboard,
+    title: "SOPEntertainment: Movie Production & Entertainment",
+    strap: "Our creative arm — original film, entertainment and artist-development projects.",
     description:
-      "Alongside our professional work, we develop cultural showcases and creative community programmes — spaces for participation, performance and shared experience.",
+      "Through SOPEntertainment, SOPConnect develops and coordinates original movie and entertainment projects, from early concept through to premiere.",
     items: [
-      "Cultural events",
-      "Creative showcases",
-      "Live performances",
-      "Community arts programmes",
-      "Talent showcases",
-      "Cultural exhibitions",
-      "Creative workshops",
-      "Performer and programme coordination",
-      "Educational and cultural festivals",
-      "Collaborative community programmes",
+      "Movie and short-film production",
+      "Script and concept development",
+      "Pre-production planning",
+      "Production coordination",
+      "Casting coordination",
+      "Location and logistics planning",
+      "Artist promotion",
+      "Creative-talent development",
+      "Film premieres and screenings",
+      "Entertainment and cultural projects",
+      "Collaboration with actors, directors, writers and production professionals",
     ],
+    disclaimer:
+      "Through SOPEntertainment, SOPConnect develops genuine movie and entertainment productions. We do not offer general commercial video production or event-videography services unless specifically advertised as such.",
   },
+];
+
+// Genuine SOPEntertainment productions, shown on the Services page under
+// the SOPEntertainment listing. status is one of: "Released",
+// "In production", "Pre-production", "In development", "Upcoming".
+export const productions = [
+  { title: "Black Smith (Àlàgbède)", status: "Released" },
+  { title: "Oversabi Aunty", status: "Released" },
+  { title: "Silence (Ipalolo)", status: "Released" },
+  { title: "Audience Watching (Mercy's Show)", status: "Released" },
 ];
 
 export const values = [

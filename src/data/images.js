@@ -9,11 +9,16 @@ import careerEmployability from "../assets/services/career-employability.jpg";
 import educationTraining from "../assets/services/education-training.jpg";
 import educationalSupport from "../assets/services/educational-support.jpg";
 import conferencesEvents from "../assets/services/conferences-events.jpg";
-import cultureCreative from "../assets/services/culture-creative.jpg";
+import sopentertainment from "../assets/services/sopentertainment.jpg";
 
 import careerDevelopmentConference from "../assets/events/career-development-conference.jpg";
 import employabilitySkillsWorkshop from "../assets/events/employability-skills-workshop.jpg";
 import culturalShowcaseEvening from "../assets/events/cultural-showcase-evening.jpg";
+
+import blackSmith from "../assets/productions/black-smith.jpg";
+import oversabiAunty from "../assets/productions/oversabi-aunty.jpg";
+import silenceIpalolo from "../assets/productions/silence-ipalolo.jpg";
+import cinemaScreening from "../assets/productions/cinema-screening.jpg";
 
 export const heroImages = {
   home: homeHero,
@@ -31,7 +36,7 @@ export const serviceImages = {
   "education-training": educationTraining,
   "educational-support": educationalSupport,
   "conferences-events": conferencesEvents,
-  "culture-creative": cultureCreative,
+  sopentertainment,
 };
 
 // Matches upcomingEvents order in content.js.
@@ -40,3 +45,12 @@ export const eventImages = [
   employabilitySkillsWorkshop, // Employability Skills Workshop
   culturalShowcaseEvening, // Cultural Showcase Evening
 ];
+
+// Poster art for productions in content.js, keyed by production title.
+// A title with no entry here falls back to a plain placeholder card.
+export const productionImages = {
+  "Black Smith (Àlàgbède)": blackSmith,
+  "Oversabi Aunty": oversabiAunty,
+  "Silence (Ipalolo)": silenceIpalolo,
+  "Audience Watching (Mercy's Show)": cinemaScreening,
+};

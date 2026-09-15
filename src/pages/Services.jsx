@@ -1,12 +1,20 @@
-import { Check } from "lucide-react";
+import { Check, Clapperboard } from "lucide-react";
 import Container from "../components/Container";
 import Reveal from "../components/Reveal";
 import PageHero from "../components/PageHero";
 import DisclaimerBanner from "../components/DisclaimerBanner";
 import CTASection from "../components/CTASection";
 import Button from "../components/Button";
-import { services } from "../data/content";
-import { heroImages, serviceImages } from "../data/images";
+import { services, productions } from "../data/content";
+import { heroImages, serviceImages, productionImages } from "../data/images";
+
+const statusStyles = {
+  Released: "bg-leaf/10 text-leaf-dark",
+  "In production": "bg-accent/10 text-accent-dark",
+  "Pre-production": "bg-secondary/10 text-secondary-dark",
+  "In development": "bg-line text-ink-soft",
+  Upcoming: "bg-primary/10 text-primary",
+};
 
 export default function Services() {
   return (
@@ -86,6 +94,44 @@ export default function Services() {
                   )}
                 </Reveal>
               </div>
+
+              {service.id === "sopentertainment" && (
+                <Reveal delay={0.15} className="mt-14 border-t border-line pt-12">
+                  <p className="mb-6 text-sm font-medium text-primary">Our productions</p>
+                  <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+                    {productions.map((production) => {
+                      const poster = productionImages[production.title];
+                      const badgeClasses =
+                        statusStyles[production.status] ?? "bg-line text-ink-soft";
+                      return (
+                        <div key={production.title} className="group overflow-hidden border border-line bg-surface">
+                          <div className="relative aspect-[2/3] overflow-hidden bg-primary/5">
+                            {poster ? (
+                              <img
+                                src={poster}
+                                alt={production.title}
+                                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                              />
+                            ) : (
+                              <div className="flex h-full w-full items-center justify-center">
+                                <Clapperboard size={28} className="text-primary/25" />
+                              </div>
+                            )}
+                          </div>
+                          <div className="p-3">
+                            <span className={`inline-block w-fit rounded-full px-2.5 py-0.5 text-[11px] font-medium ${badgeClasses}`}>
+                              {production.status}
+                            </span>
+                            <p className="mt-2 text-sm font-medium leading-snug text-primary">
+                              {production.title}
+                            </p>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </Reveal>
+              )}
             </Container>
           </section>
         );

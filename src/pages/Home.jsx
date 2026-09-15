@@ -44,12 +44,14 @@ export default function Home() {
         <Container className="relative grid grid-cols-1 items-center gap-14 py-20 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:py-28">
           <Reveal>
             <h1 className="font-display text-4xl font-medium leading-[1.08] text-paper sm:text-5xl lg:text-[3.4rem]">
-              Developing skills. Supporting careers. Creating meaningful experiences.
+              Developing Skills. Creating Opportunities. Producing Stories.
             </h1>
             <p className="mt-6 max-w-lg text-[15px] leading-relaxed text-paper/75">
               SOPConnect Consultancy Limited provides career-development
-              support, professional training, educational guidance and
-              carefully designed business, cultural and community events.
+              support, professional training, educational guidance,
+              conferences, cultural events and movie-production services.
+              Through SOPEntertainment, we create and support original film,
+              entertainment and artist-development projects.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <Button to="/services" variant="primary" withArrow>

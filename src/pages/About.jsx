@@ -23,12 +23,15 @@ export default function About() {
             <SectionHeading title="Who we are" />
             <p className="mt-6 text-[15px] leading-relaxed text-ink-soft">
               SOPConnect Consultancy Limited is a multidisciplinary
-              career-development, training, educational-support and events
-              company. We help individuals develop practical career and
-              workplace skills through independent employability support,
-              professional training and educational guidance. Alongside this,
-              we organise conferences, seminars, workshops, networking
-              programmes, cultural events and creative community experiences.
+              career-development, training, educational-support, events and
+              entertainment-production company. We help individuals develop
+              practical career and workplace skills through independent
+              employability support, professional training and educational
+              guidance, and we organise conferences, seminars, workshops and
+              networking programmes. Through its creative arm,
+              SOPEntertainment, the company develops movie productions,
+              cultural programmes, entertainment events and
+              artist-development initiatives.
             </p>
             <p className="mt-4 text-[15px] leading-relaxed text-ink-soft">
               We work with individuals, professionals, organisations,
